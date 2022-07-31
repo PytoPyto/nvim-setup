@@ -83,7 +83,6 @@ runtime ./vim/lightline.vim
 runtime ./maps.vim
 runtime ./vim/prettier.vim
 lua <<EOF
-require('samura/gitsigns')
 require('samura/trouble')
 EOF
 "}}}
