@@ -43,6 +43,7 @@ set si "Smart indent
 set nowrap "No Wrap lines
 set backspace=start,eol,indent
 set path+=**
+
 set wildignore+=*/node_modules/*
 autocmd InsertLeave * set nopaste
 set formatoptions+=r
@@ -82,8 +83,9 @@ runtime ./plug.vim
 runtime ./vim/lightline.vim
 runtime ./maps.vim
 runtime ./vim/prettier.vim
-lua <<EOF
-require('samura/trouble')
+lua << EOF
+require("samura/git")
+require("samura/trouble")
 EOF
 "}}}
 
